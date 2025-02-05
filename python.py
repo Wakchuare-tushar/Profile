@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+import os
+import os
+
+def create_html_files():
+    folder_name = "html_files"
+    os.makedirs(folder_name, exist_ok=True)  # Create a folder if it doesn't exist
+    
+    for i in range(1, 20):  # Loop to create 19 files
+        file_name = f"{folder_name}/Assignment{i}.html"
+        with open(file_name, "w") as file:
+            file.write(f"""
+            <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -88,36 +99,26 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Assignments</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="Assignment1.html" class="dropdown-item">Assignments 1 </a>
-                        <a href="Assignment2.html" class="dropdown-item">Assignments 2 </a>
-                        <a href="Assignment3.html" class="dropdown-item">Assignments 3</a>
-                        <a href="Assignment4.html" class="dropdown-item">Assignments 4 </a>
-                        <a href="Assignment5.html" class="dropdown-item">Assignments 5 </a>
-                        <a href="Assignment6.html" class="dropdown-item">Assignments 6 </a>
-                        <a href="Assignment7.html" class="dropdown-item">Assignments 7</a>
-                        <a href="Assignment8.html" class="dropdown-item">Assignments 8 </a>
-                        <a href="Assignment9.html" class="dropdown-item">Assignments 9 </a>
-                        <a href="Assignment10.html" class="dropdown-item">Assignments 10 </a>
-                        <a href="Assignment11.html" class="dropdown-item">Assignments 11</a>
-                        <a href="Assignment12.html" class="dropdown-item">Assignments 12</a>
-                        <a href="Assignment13.html" class="dropdown-item">Assignments 13</a>
-                        <a href="Assignment14.html" class="dropdown-item">Assignments 14 </a>
-                        <a href="Assignment15.html" class="dropdown-item">Assignments 15 </a>
-                        <a href="Assignment16.html" class="dropdown-item">Assignments 16 </a>
-                        <a href="Assignment17.html" class="dropdown-item">Assignments 17 </a>
-                        <a href="Assignment18.html" class="dropdown-item">Assignments 18 </a>
-                        <a href="Assignment19.html" class="dropdown-item">Assignments 19 </a>
-                        <a href="Assignment20.html" class="dropdown-item">Assignments 20 </a>
-                        <a href="Assignment21.html" class="dropdown-item">Assignments 21 </a>
-                        <a href="Assignment22.html" class="dropdown-item">Assignments 22 </a>
-                        <a href="Assignment23.html" class="dropdown-item">Assignments 23 </a>
-                        <a href="Assignment24.html" class="dropdown-item">Assignments 24 </a>
-                        <a href="Assignment25.html" class="dropdown-item">Assignments 25 </a>
-
+                        <a href="bookng.html" class="dropdown-item">Assignments 1 </a>
+                        <a href="tea.html" class="dropdown-item">Assignments 2 </a>
+                        <a href="tetimonial.html" class="dropdown-item">Assignments 3</a>
+                        <a href="44.html" class="dropdown-item">Assignments 4 </a>
+                        <a href="ooking.html" class="dropdown-item">Assignments 5 </a>
+                        <a href="tea.html" class="dropdown-item">Assignments 6 </a>
+                        <a href="tetimonial.html" class="dropdown-item">Assignments 7</a>
+                        <a href="44.html" class="dropdown-item">Assignments 8 </a>
+                        <a href="04.html" class="dropdown-item">Assignments 9 </a>
+                        <a href="40.html" class="dropdown-item">Assignments 10 </a>
+                        <a href="44.html" class="dropdown-item">Assignments 11</a>
+                        <a href="04.html" class="dropdown-item">Assignments 12</a>
+                        <a href="04.html" class="dropdown-item">Assignments 13</a>
+                        <a href="04.html" class="dropdown-item">Assignments 14 </a>
+                        <a href="44.html" class="dropdown-item">Assignments 15 </a>
+                        <a href="04.html" class="dropdown-item">Assignments 16 </a>
                     </div>
                 </div>
-                <a href="Final-Project.html" class="nav-item nav-link  active">Final Project</a>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="Final-Project.html" class="nav-item nav-link">Final Project</a>
+                <a href="contact.html" class="nav-item nav-link active">Contact</a>
             </div>
            <!-- <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a> -->
         </div>
@@ -130,12 +131,12 @@
     <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/carousel-bg-1.jpg);">
         <div class="container-fluid page-header-inner py-5">
             <div class="container text-center">
-                <h1 class="display-3 text-white mb-3 animated slideInDown">Final-Project</h1>
+                <h1 class="display-3 text-white mb-3 animated slideInDown">Contact</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center text-uppercase">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         
-                        <li class="breadcrumb-item text-white active" aria-current="page">Final-Project</li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
                     </ol>
                 </nav>
             </div>
@@ -143,12 +144,13 @@
     </div>
     <!-- Page Header End -->
 
-  <!-- Service start -->
- <!-- Service End -->
 
-  <!-- Testimonial End -->
+    <!-- Contact Start -->
 
-  
+    <!-- Contact End -->
+
+
+
  <!-- Footer Start -->
  <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
@@ -196,8 +198,7 @@
 <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -216,3 +217,8 @@
 </body>
 
 </html>
+            """)
+    
+
+# Run the function
+create_html_files()
